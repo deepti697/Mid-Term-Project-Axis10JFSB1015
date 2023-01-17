@@ -1,0 +1,30 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: API_GATEWAY
+  cloud:
+    gateway:
+      routes:
+      - id: HOTEL-CUSTOMER-SERVICE
+        uri: 
+            lb://HOTEL-CUSTOMER-SERVICE
+        predicates:
+        - Path=/ms1/** 
+      - id: HOTEL-EMPLOYEE-SERVICE
+        uri: 
+            lb://HOTEL-EMPLOYEE-SERVICE
+        predicates:
+        - Path=/ms2/** 
+      - id: HOTEL-ROOM-SERVICE
+        uri: 
+            lb://HOTEL-ROOM-SERVICE
+        predicates:
+        - Path=/ms3/**
+        
+      
+        
+
+
+
