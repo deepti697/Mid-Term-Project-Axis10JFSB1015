@@ -1,0 +1,84 @@
+
+.product-list {
+    text-align: center;
+    width: 100%;
+    height: 87vh;/*outer  scroller bar */   
+  }
+ 
+  #tablediv{
+    overflow-y: scroll;
+    height: 400px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 15px; 
+  }  
+  
+  table{
+    border-collapse: collapse;
+    background-color: white;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    /*  text-align: center; 
+    position: relative;*/
+  }
+  table thead{  
+    background-color: aqua;
+    color: blue;
+    position: sticky;
+    top: 0;
+  }
+  tbody{
+    overflow-y: scroll;  
+  }
+  th, td{
+    text-align: center;
+    color: blue;
+    padding: 1em .5em;
+  }
+  tr:nth-child(even) {
+    background-color: rgb(186, 237, 254);
+  }
+  
+  .backbtn{
+    background-color: rgb(11, 15, 120);
+    color: white;
+    padding: 4px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .backbtn:hover{
+    background-color: rgb(120, 113, 223);
+  }
+
+  table .updatebtn{
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  table .updatebtn:hover{
+    background-color: rgb(120, 113, 223);
+  }
+  
+  .search-product-box {
+    width: 350px;
+    margin: 20px;
+    height: 38px;
+    padding-left: 30px;
+    border: solid 1px rgb(16, 13, 13);
+  }
+  .bg_image2{
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #f5f5f5;
+}
